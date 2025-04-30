@@ -17,36 +17,67 @@ header h1 {
   font-size: 2em;
 }
 
-.lang-switch button {
-  background: #000;
-  border: 1px solid #33ff33;
-  color: #33ff33;
-  margin: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
 }
-.lang-switch button:hover {
-  background: #33ff33;
+
+/* Button */
+.dropbtn {
+  background-color: #111;
+  color: #0f0;
+  padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #0f0;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover effects */
+.dropdown-content a:hover {
+  background-color: #0f0;
   color: #000;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  background: #111;
-  padding: 10px;
-  border-bottom: 1px solid #33ff33;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-nav a {
-  color: #33ff33;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 18px;
+.dropdown:hover .dropbtn {
+  background-color: #0f0;
+  color: #000;
 }
 
-nav a:hover {
-  color: #00ffcc;
+
+.logo {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #0f0;
+  background-color: #000;
 }
 
 .video-section {
@@ -66,6 +97,49 @@ nav a:hover {
   justify-content: center;
 }
 
+  .video-section {
+    padding: 20px;
+  }
+
+  .video-section h2 {
+    color: #0f0;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .video-card {
+    background: #111;
+    border: 1px solid #0f0;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .video-info {
+    padding: 10px;
+    background-color: #080808;
+    border-top: 1px dashed #0f0;
+  }
+
+  .video-info h3 {
+    color: #0ff;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .video-info p {
+    margin: 2px 0;
+  }
+
+  .fa-eye {
+    color: #0f0;
+  }
+
 iframe {
   width: 320px;
   height: 180px;
@@ -79,3 +153,66 @@ footer {
   background: #1a1a1a;
   border-top: 1px solid #33ff33;
 }
+
+  .feedback-form {
+    margin-top: 20px;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 8px;
+    color: #0f0;
+  }
+
+  .feedback-form h2 {
+    margin-bottom: 10px;
+  }
+
+  .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #0f0;
+    border-radius: 5px;
+    resize: none;
+  }
+
+  .feedback-form button {
+    background-color: #0f0;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+
+  .feedback-form button:hover {
+    background-color: #090;
+  }
+  
+ 
+  .related-info {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    color: #ccc;
+    margin-top: 40px;
+  }
+
+  .related-info h2 {
+    color: #0f0;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .related-info p {
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .related-info i {
+    margin-right: 10px;
+  }
